@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">foodrunner</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="favourite_restaurant">Favourite Restaurants</string>
+    <string name="faq">FAQs</string>
+    <string name="logout">Log out</string>
+    <string name="opne_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="question_faq">Question asked in Faq</string>
+    <string name="answer_faq">Answer given in Faq</string>
+    <string name="imageview_todo">TODO</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="restaurant_perpersonprice">Rs 200/person</string>
+    <string name="restaurant_rating">4.5</string>
+    <string name="restaurant_item_add">Add</string>
+    <string name="restaurant_item_price">ItemPrice</string>
+    <string name="restaurant_item_name">Item Name</string>
+    <string name="restaurant_item_serialno">1</string>
+
+</resources>

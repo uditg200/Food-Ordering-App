@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CartActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cartToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:title="My Cart"
+            app:layout_scrollFlags="scroll|enterAlways"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <TextView
+                android:id="@+id/txtOrderfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ordering From : "
+                android:textSize="17sp"
+                android:padding="8dp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/txtCartRestaurantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtOrderfrom"
+                android:text="Resctaurant Name"
+                android:textSize="17sp"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/txtOrderfrom"
+                android:background="@color/colorPrimary" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/myCartRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtOrderfrom"
+                android:layout_margin="5dp"
+                />
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <Button
+        android:id="@+id/btn_placeOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Place Order"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@drawable/roundedbutton"
+        android:layout_margin="10dp"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/cartProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ProgressBar
+            android:id="@+id/cartProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

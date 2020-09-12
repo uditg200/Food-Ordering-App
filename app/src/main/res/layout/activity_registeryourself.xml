@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.registeryourself"
+    android:background="#C5093D">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/etxt_registeryourself_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="  Password (Min 4 Characters)  "
+        android:layout_centerInParent="true"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundbackground"
+        />
+    <EditText
+        android:id="@+id/etxt_registeryourself_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/etxt_registeryourself_password"
+        android:hint="  Confirm Password  "
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:background="@drawable/roundbackground"
+        />
+    <EditText
+        android:id="@+id/etxt_registeryourself_Delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="  Delivery Address  "
+        android:layout_above="@+id/etxt_registeryourself_password"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundbackground"
+        />
+    <EditText
+        android:id="@+id/etxt_registeryourself_mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="  Mobile Number (10 digits)  "
+        android:layout_above="@+id/etxt_registeryourself_Delivery_address"
+        android:inputType="phone"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundbackground"
+        />
+    <EditText
+        android:id="@+id/etxt_registeryourself_emailid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="  Email Address  "
+        android:layout_above="@+id/etxt_registeryourself_mobileno"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundbackground"
+        />
+    <EditText
+        android:id="@+id/etxt_registeryourself_Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="  Name (Min 3 Characters)  "
+        android:layout_above="@+id/etxt_registeryourself_emailid"
+        android:inputType="text"
+        android:background="@drawable/roundbackground"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_registeryourself_confirm_password"
+            android:background="@drawable/roundbackground"
+            android:layout_margin="20dp">
+    <Button
+        android:id="@+id/btn_registeryourself_Register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/roundedbutton"
+        android:layout_margin="5dp"
+        android:text="  REGISTER  "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="17sp"
+
+        />
+        </RelativeLayout>
+    <TextView
+        android:id="@+id/txt_registeryourself_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Yourself"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_above="@id/etxt_registeryourself_Name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/food_network_new_logo"/>
+
+    <RelativeLayout
+        android:id="@+id/signupProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <ProgressBar
+            android:id="@+id/signupProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

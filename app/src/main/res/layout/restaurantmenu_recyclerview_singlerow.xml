@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="6"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/txt_itemNo"
+        android:layout_weight="0.6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurant_item_serialno"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        />
+    <RelativeLayout
+        android:layout_weight="4.2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restaurant_item_name"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_itemprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restaurant_item_price"
+            android:padding="5dp"
+            android:textSize="12.5sp"
+            android:layout_below="@+id/txt_itemname" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_itemaddtoCart"
+        android:layout_weight="1.2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="@string/restaurant_item_add"
+        android:layout_gravity="center"
+        android:background="@drawable/roundedbutton"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

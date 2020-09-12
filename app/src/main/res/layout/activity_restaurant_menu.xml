@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Restaurant_menu">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_scrollFlags="scroll|enterAlways"
+        />
+    </com.google.android.material.appbar.AppBarLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior">
+          <TextView
+              android:id="@+id/txtChooseItemFromMenu"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Choose from Menu Given Below:"
+              android:textStyle="bold"
+              android:textSize="17sp"
+              android:padding="10dp"
+              android:textColor="@color/colorPrimaryDark" />
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="0.8dp"
+              android:layout_below="@id/txtChooseItemFromMenu"
+              android:background="#909090"
+              />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RestaurantMenu_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="56dp"
+                android:layout_below="@+id/txtChooseItemFromMenu" />
+      </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <RelativeLayout
+        android:id="@+id/RestaurantItemProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <ProgressBar
+            android:id="@+id/RestaurantItemProgresBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnProceedToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:text="Proceed to Cart"
+        android:background="@drawable/roundedbutton"
+        android:layout_margin="10dp" />
+</RelativeLayout>

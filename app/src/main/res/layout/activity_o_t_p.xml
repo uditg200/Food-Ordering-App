@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.OTPActivity"
+    android:background="#C5093D">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/food_network_new_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="An OTP has been sent to your Email Id. Please enter the OTP along with your new password"
+        android:layout_above="@+id/et_EnterOtp"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_EnterOtp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/et_otpNewPassword"
+        android:hint="Enter the OTP"
+        android:background="@drawable/roundbackground"
+        android:layout_margin="5dp"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/et_otpNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/et_otpConfirmPassword"
+        android:hint="Enter the new password"
+        android:background="@drawable/roundbackground"
+        android:layout_margin="5dp"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/et_otpConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:hint="Confirm Password"
+        android:layout_margin="5dp"
+        android:background="@drawable/roundbackground"
+        android:inputType="textPassword"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_otpConfirmPassword"
+            android:background="@drawable/roundbackground"
+            android:layout_margin="20dp"
+            >
+        <Button
+            android:id="@+id/btn_otpSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/roundedbutton"
+            android:layout_margin="5dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/OTPprogresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ProgressBar
+            android:id="@+id/OTPprogressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

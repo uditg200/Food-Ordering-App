@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="7"
+    >
+
+    <View
+        android:layout_weight="0.4"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/cartItemName"
+        android:layout_weight="5.1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="Item Name"/>
+    <TextView
+        android:id="@+id/CartItemPrice"
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rs 200"
+        android:padding="8dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:textAlignment="textStart"
+        />
+
+</LinearLayout>

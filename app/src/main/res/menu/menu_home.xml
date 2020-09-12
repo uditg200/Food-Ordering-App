@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/sortbyname"
+        android:title="Sort By Name"
+        android:icon="@drawable/ic_sortname"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/sortbyrating"
+        android:title="Sort By Rating"
+        android:icon="@drawable/ic_sortrating"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/sortbypriceperperson"
+        android:title="Sort By Price/Person"
+        android:icon="@drawable/ic_sortpriceperperson"
+        app:showAsAction="always"/>
+    </group>
+
+</menu>
